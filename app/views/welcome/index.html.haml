@@ -1,0 +1,10 @@
+%div{ :style => "float: left;width: 500px; margin: 0 auto;"}
+  = image_tag('raugstad_inc_logo.png', :style => "width: 481px;padding: 50px 0 0 40px;")
+%div{ :style => "float: left;width: 420px;margin: 60px 0; padding: 0 0 0 60px;" }
+  = image_tag('raugstad_inc_small_logo.png')
+  = link_to image_tag('raugstad_inc_map.png', :class => "map"), "http://www.google.com/maps/place?cid=5706891306292699230&q=Raugstad+Inc.&fb=1&gl=us&hq=Raugstad+Inc.&hnear=Chicago,+IL"
+  %h1 Coming Soon Raugstad Inc.
+  %hr
+  %p 600 Elm Street, Deerfield, IL 60015-4241
+  %p 1-847-945-0995
+  = mail_to "kevin@raugstadinc.com", "Email Us"
