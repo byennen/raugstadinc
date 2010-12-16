@@ -2,14 +2,13 @@ body {
   background: #eeeeee; }
 
 #content {
-  background: white;
-  width: 980px;
+  width: 800px;
   margin: 50px auto 0;
-  border: #4f0b03 solid 10px;
   overflow: auto; }
-  #content .map {
-    border: blue 2px solid;
-    margin: 0 0 50px 0; }
+  #content img {
+    margin: 0 auto; }
+  #content p {
+    text-align: center; }
 
 * {
   margin: 0;
