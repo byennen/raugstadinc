@@ -4,11 +4,25 @@
     %meta{ 'http-equiv' => "content-type", :content => "text/html; charset=utf-8" }
     %meta{ :name => "Author", :content => "Raugstad Inc" }
     %meta{ :name => "viewport", :content => "width=1024" }
-    %title= 'Welcome to Raugstad Inc | Deerfield, IL | 1-847-945-0995 | ' + @title ||= "Thanks for Visiting!"
+    %title= 'Welcome to Raugstad Inc | Deerfield, IL | 1-847-722-5626 | ' + @title ||= "Thanks for Visiting!"
     %meta{ :name => "Keywords", :content => "Raugstad Inc" }
     %meta{ :name => "Description", :content => "Raugstad Inc"}
     = stylesheet_link_tag 'frontend/all'
     = javascript_include_tag "https://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"
   %body
-    #content
-      = yield
+    #container
+      #header
+        = image_tag('raugstad_inc_logo.png', :class => "logo")
+        #menu
+          %ul
+            %li= link_to "Home", root_path, :class => "active"
+            %li= link_to "About Us", "#"
+            %li= link_to "Meet the Builders", "#"
+            %li= link_to "Gallery", "#"
+            %li= link_to "Testimonials", "#"
+            %li= link_to "Contact Us", "#"
+      #content
+        = yield
+    #footer
+      %ul
+        %li &copy; 2010 Raugstad Inc.

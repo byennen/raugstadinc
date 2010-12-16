@@ -1,14 +1,55 @@
 body {
-  background: #eeeeee; }
+  background: #eeeeee;
+  font: 12px/18px "Lucida Grande", "Lucida Sans Unicode", Arial, Verdana, sans-serif; }
 
-#content {
-  width: 800px;
-  margin: 50px auto 0;
+a {
+  color: #333333;
+  text-decoration: none; }
+  a:hover {
+    color: #4f0b03; }
+
+#container {
+  background: white;
+  width: 980px;
+  margin: 0 auto 0;
   overflow: auto; }
-  #content img {
-    margin: 0 auto; }
-  #content p {
-    text-align: center; }
+
+#header .logo {
+  margin: 10px 0 0 40px; }
+#header #menu {
+  float: right;
+  margin: 65px 40px 0 0; }
+  #header #menu li {
+    padding: 0;
+    display: inline; }
+  #header #menu a {
+    font-size: 14px;
+    color: #333333;
+    padding: 10px; }
+    #header #menu a:hover {
+      background: #eeeeee;
+      border-radius: 15px;
+      -moz-border-radius: 15px; }
+  #header #menu a.active {
+    background: #4f0b03;
+    color: white;
+    border-radius: 15px;
+    -moz-border-radius: 15px; }
+
+#content .slideshow {
+  width: 900px;
+  margin: 20px auto; }
+
+#footer {
+  width: 980px;
+  border-top: #4f0b03 solid 5px;
+  margin: 0 auto 50px; }
+  #footer ul {
+    float: right;
+    margin: 10px 0 0; }
+  #footer li {
+    padding: 0 0 0 15px;
+    display: inline; }
 
 * {
   margin: 0;

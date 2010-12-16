@@ -1,11 +1,56 @@
 body
   background: #eee
+  font: 12px/18px "Lucida Grande","Lucida Sans Unicode",Arial,Verdana,sans-serif
 
-#content
-  width: 800px
-  margin: 50px auto 0 
+a
+  color: #333
+  text-decoration: none
+  &:hover
+    color: #4f0b03
+
+#container
+  background: white
+  width: 980px
+  margin: 0 auto 0
   overflow: auto
-  img
-    margin: 0 auto
-  p
-    text-align: center
+
+#header
+  .logo
+    margin: 10px 0 0 40px
+  #menu
+    float: right
+    margin: 65px 40px 0 0
+    li
+      padding: 0
+      display: inline
+    a
+      font-size: 14px
+      color: #333
+      padding: 10px
+      &:hover
+        background: #eee
+        border-radius: 15px
+        -moz-border-radius: 15px
+    a.active
+      background: #4f0b03
+      color: white
+      border-radius: 15px
+      -moz-border-radius: 15px
+    
+#content
+  .slideshow
+    width: 900px
+    margin: 20px auto
+    
+#footer
+  width: 980px
+  border-top: #4f0b03 solid 5px
+  margin: 0 auto 50px
+  ul
+    float: right
+    margin: 10px 0 0
+  li
+    padding: 0 0 0 15px
+    display: inline
+  
+  
