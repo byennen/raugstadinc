@@ -38,9 +38,23 @@ a
       -moz-border-radius: 15px
     
 #content
-  .slideshow
+  margin: 20px
+  #slideshow
     width: 900px
-    margin: 20px auto
+    height: 600px
+    margin: 0 auto 50px
+    position: relative
+    img
+      position: absolute
+      top: 0
+      left: 0
+      z-index: 8
+      opacity: 0.0
+    img.active
+      z-index: 10
+      opacity: 1.0
+    img.last-active
+      z-index: 9
     
 #footer
   width: 980px
