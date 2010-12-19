@@ -9,14 +9,15 @@
     %meta{ :name => "Description", :content => "Raugstad Inc"}
     = stylesheet_link_tag 'frontend/all'
     = javascript_include_tag "https://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"
+    = javascript_include_tag "application", "slider"
   %body
     #container
       #header
-        = image_tag('raugstad_inc_logo.png', :class => "logo")
+        = link_to image_tag('raugstad_inc_logo.png', :class => "logo"), root_path
         #menu
           %ul
-            %li= link_to "Home", root_path, :class => "active"
-            %li= link_to "About Us", "#"
+            %li= link_to "Home", root_path, :class => is_active?("home")
+            %li= link_to "About Us", about_path, :class => is_active?("about")
             %li= link_to "Meet the Builders", "#"
             %li= link_to "Gallery", "#"
             %li= link_to "Testimonials", "#"

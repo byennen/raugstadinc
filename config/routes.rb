@@ -1,5 +1,9 @@
 RaugstadincCom::Application.routes.draw do
+  
+  match 'about' => 'welcome#about'
+  
   root :to => "welcome#index"
+  
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
