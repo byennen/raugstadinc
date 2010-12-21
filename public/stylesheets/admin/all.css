@@ -56,3 +56,10 @@ a {
     margin: 8px 10px; }
   .error_messages ul {
     margin: 0; }
+
+#menu ul {
+  margin: 0;
+  padding: 0; }
+#menu li {
+  display: inline;
+  margin: 0 15px 0 0; }

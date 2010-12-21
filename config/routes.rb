@@ -1,9 +1,18 @@
 RaugstadincCom::Application.routes.draw do
   
+  # resources :testimonials
+
   match 'about' => 'welcome#about'
+  match 'meet_the_builders' => 'builders#index'
+  match 'testimonials' => 'testimonials#index'
   
   root :to => "welcome#index"
   
+  namespace :admin do
+    resources :builders
+    resources :testimonials
+    root :to => "dashboard#index"
+  end
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

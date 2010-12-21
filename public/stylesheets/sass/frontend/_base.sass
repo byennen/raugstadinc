@@ -15,18 +15,22 @@ a
   overflow: auto
 
 #header
+  clear: both
+  height: 80px
+  border-top: 5px solid #4F0B02
   .logo
-    margin: 10px 0 0 40px
-  #menu
     float: right
-    margin: 65px 40px 0 0
+    margin: 0 40px 0 0
+  #menu
+    float: left
+    margin: 30px 0 0 40px
     li
       padding: 0
       display: inline
     a
       font-size: 14px
       color: #333
-      padding: 10px
+      padding: 10px 12px
       &:hover
         background: #eee
         border-radius: 15px
@@ -58,8 +62,10 @@ a
     
 #footer
   width: 980px
-  border-top: #4f0b03 solid 5px
+  background: url(../../images/footer.png)
+  height: 100px
   margin: 0 auto 50px
+  color: white
   ul
     float: right
     margin: 10px 0 0

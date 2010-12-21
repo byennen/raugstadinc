@@ -1,0 +1,23 @@
+- title "Edit Testimonial"
+
+- form_for [:admin, @testimonial] do |f|
+  /=# render 'form', :locals => { :f => f }
+  = f.error_messages
+  %p
+    = f.label :from
+    %br
+    = f.text_field :from
+  %p
+    = f.label :quote
+    %br
+    = f.text_field :quote
+  %p
+    = f.label :date
+    %br
+    = f.datetime_select :date
+  %p
+    = f.submit
+
+%p
+  = link_to "Show", admin_testimonials_path |
+  = link_to "View All", admin_testimonials_path

@@ -74,27 +74,32 @@ a {
   margin: 0 auto 0;
   overflow: auto; }
 
-#header .logo {
-  margin: 10px 0 0 40px; }
-#header #menu {
-  float: right;
-  margin: 65px 40px 0 0; }
-  #header #menu li {
-    padding: 0;
-    display: inline; }
-  #header #menu a {
-    font-size: 14px;
-    color: #333333;
-    padding: 10px; }
-    #header #menu a:hover {
-      background: #eeeeee;
+#header {
+  clear: both;
+  height: 80px;
+  border-top: 5px solid #4f0b02; }
+  #header .logo {
+    float: right;
+    margin: 0 40px 0 0; }
+  #header #menu {
+    float: left;
+    margin: 30px 0 0 40px; }
+    #header #menu li {
+      padding: 0;
+      display: inline; }
+    #header #menu a {
+      font-size: 14px;
+      color: #333333;
+      padding: 10px 12px; }
+      #header #menu a:hover {
+        background: #eeeeee;
+        border-radius: 15px;
+        -moz-border-radius: 15px; }
+    #header #menu a.active {
+      background: #4f0b03;
+      color: white;
       border-radius: 15px;
       -moz-border-radius: 15px; }
-  #header #menu a.active {
-    background: #4f0b03;
-    color: white;
-    border-radius: 15px;
-    -moz-border-radius: 15px; }
 
 #content {
   margin: 20px; }
@@ -117,8 +122,10 @@ a {
 
 #footer {
   width: 980px;
-  border-top: #4f0b03 solid 5px;
-  margin: 0 auto 50px; }
+  background: url(../../images/footer.png);
+  height: 100px;
+  margin: 0 auto 50px;
+  color: white; }
   #footer ul {
     float: right;
     margin: 10px 0 0; }

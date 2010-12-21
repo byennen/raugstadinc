@@ -6,10 +6,16 @@
     %title= content_for?(:title) ? yield(:title) : "Untitled"
     = stylesheet_link_tag 'admin/all'
     = javascript_include_tag "https://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"
+    = javascript_include_tag :all
     = csrf_meta_tag
     = yield(:head)
   %body
     #container
+      #menu
+        %ul
+          %li= link_to "Dashboard", admin_root_path
+          %li= link_to "Builders", admin_builders_path
+          %li= link_to "Testimonials", admin_testimonials_path
       - flash.each do |name, msg|
         = content_tag :div, msg, :id => "flash_#{name}"
       = content_tag :h1, yield(:title) if show_title?

@@ -1,0 +1,18 @@
+- title "Testimonial"
+
+%p
+  %strong From:
+  = @testimonial.from
+  
+%p
+  %strong Quote:
+  = @testimonial.quote
+
+%p
+  %strong Date:
+  = @testimonial.date
+
+%p
+  = link_to "Edit", edit_admin_testimonial_path(@testimonial)
+  = link_to "Destroy", admin_testimonial_path(@testimonial), :confirm => 'Are you sure?', :method => :delete
+  = link_to "View All", admin_testimonials_path
