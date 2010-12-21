@@ -1,0 +1,16 @@
+- title "Testimonials"
+
+%table
+  %tr
+    %th From
+    %th Quote
+    %th Date
+  - for testimonial in @testimonials
+    %tr
+      %td= testimonial.from
+      %td= testimonial.quote
+      %td= testimonial.date
+      %td= link_to "Edit", edit_admin_testimonial_path(testimonial)
+      %td= link_to "Remove", admin_testimonial_path(testimonial), :confirm => 'Are you sure?', :method => :delete
+
+%p= link_to "New Testimonial", new_admin_testimonial_path

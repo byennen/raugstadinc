@@ -5,10 +5,6 @@ class Admin::BuildersController < ApplicationController
     @builders = Builder.all
   end
   
-  def show
-    @builder = Builder.find(params[:id])
-  end
-  
   def new
     @builder = Builder.new
   end
@@ -17,7 +13,7 @@ class Admin::BuildersController < ApplicationController
     @builder = Builder.new(params[:builder])
     if @builder.save
       flash[:notice] = "Successfully created builder."
-      redirect_to @builder
+      redirect_to admin_builders_path
     else
       render :action => 'new'
     end
@@ -31,7 +27,7 @@ class Admin::BuildersController < ApplicationController
     @builder = Builder.find(params[:id])
     if @builder.update_attributes(params[:builder])
       flash[:notice] = "Successfully updated builder."
-      redirect_to @builder
+      redirect_to admin_builders_path
     else
       render :action => 'edit'
     end

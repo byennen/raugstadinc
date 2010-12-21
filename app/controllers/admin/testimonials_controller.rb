@@ -5,10 +5,6 @@ class Admin::TestimonialsController < ApplicationController
     @testimonials = Testimonial.all
   end
   
-  def show
-    @testimonial = Testimonial.find(params[:id])
-  end
-  
   def new
     @testimonial = Testimonial.new
   end
