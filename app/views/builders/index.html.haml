@@ -1,6 +1,12 @@
 - title "Builders"
 
 - for builder in @builders
-  = builder.name
-  = builder.bio
-  = builder.email
+  - div_for(builder) do 
+    %p Image:
+    image here
+    %p Name:
+    = builder.name
+    %p Bio:
+    = builder.bio
+    %p Email:
+    = builder.email

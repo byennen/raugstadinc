@@ -1,6 +1,7 @@
 - for testimonial in @testimonials
   %ul
     %li
-      = testimonial.from
-      = testimonial.quote
-      = testimonial.date
+      %quote= testimonial.from
+      %br
+      %em= testimonial.quote
+      %span= testimonial.date.strftime("%b %d, %Y")
