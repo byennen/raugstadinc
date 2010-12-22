@@ -7,10 +7,11 @@
   %p
     = f.label :quote
     %br
-    = f.text_field :quote
+    = f.text_area :quote
   %p
     = f.label :date
     %br
-    = f.datetime_select :date
+    = f.date_select :date, :end_year => 1980, :start_year => Date.today.year, :discard_day => true, :order => [:month, :year]
+    
   %p
     = f.submit

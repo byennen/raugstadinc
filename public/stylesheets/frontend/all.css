@@ -58,6 +58,58 @@ input, button, textarea, select, optgroup, option {
 input, button, textarea, select {
   *font-size: 100%; }
 
+h1 {
+  font-size: 138.5%; }
+
+h2 {
+  font-size: 123.1%; }
+
+h3 {
+  font-size: 108%; }
+
+h1, h2, h3 {
+  margin: 1em 0; }
+
+h1, h2, h3, h4, h5, h6, strong {
+  font-weight: bold; }
+
+abbr, acronym {
+  border-bottom: 1px dotted black;
+  cursor: help; }
+
+em {
+  font-style: italic; }
+
+blockquote, ul, ol, dl {
+  margin: 1em; }
+
+ol, ul, dl {
+  margin-left: 2em; }
+
+ol li {
+  list-style: decimal outside; }
+
+ul li {
+  list-style: disc outside; }
+
+dl dd {
+  margin-left: 1em; }
+
+th, td {
+  border: 1px solid black;
+  padding: 0.5em; }
+
+th {
+  font-weight: bold;
+  text-align: center; }
+
+caption {
+  margin-bottom: 0.5em;
+  text-align: center; }
+
+p, fieldset, table {
+  margin-bottom: 1em; }
+
 body {
   background: #d1c1a7;
   font: 12px/18px "Lucida Grande", "Lucida Sans Unicode", Arial, Verdana, sans-serif; }
@@ -119,6 +171,8 @@ a {
       opacity: 1; }
     #content #slideshow img.last-active {
       z-index: 9; }
+  #content .testimonial {
+    margin: 1em; }
 
 #footer {
   width: 980px;

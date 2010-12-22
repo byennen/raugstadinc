@@ -37,6 +37,6 @@ class Admin::BuildersController < ApplicationController
     @builder = Builder.find(params[:id])
     @builder.destroy
     flash[:notice] = "Successfully destroyed builder."
-    redirect_to builders_url
+    redirect_to admin_builders_url
   end
 end

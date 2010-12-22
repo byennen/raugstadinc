@@ -1,7 +1,9 @@
+%h2 Customer testimonials
+
 - for testimonial in @testimonials
-  %ul
-    %li
-      %quote= testimonial.from
-      %br
-      %em= testimonial.quote
-      %span= testimonial.date.strftime("%b %d, %Y")
+  - div_for(testimonial) do
+    %em= testimonial.quote
+    %br
+    %strong= testimonial.from
+    %br
+    %strong= testimonial.date.strftime("%b %d, %Y")
