@@ -1,0 +1,14 @@
+defaults: &defaults
+  access_key_id: AKIAILMIP6G5OW5PI6AA 
+  secret_access_key: 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
+
+development:
+  <<: *defaults
+  bucket: raugstadinc_development
+
+test:
+  <<: *defaults
+
+production: 
+  <<: *defaults
+  bucket: raugstadinc_production
