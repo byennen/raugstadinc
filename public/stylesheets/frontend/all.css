@@ -135,7 +135,10 @@ a {
     margin: 0 40px 0 0; }
   #header #menu {
     float: left;
-    margin: 20px 0 0 0; }
+    margin: 30px 0 0 20px; }
+    #header #menu ul {
+      margin: 0;
+      padding: 0; }
     #header #menu li {
       padding: 0;
       display: inline; }
